@@ -20,20 +20,20 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50`}>
         {/* 상단 헤더 컴포넌트 */}
         <header className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
-          <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-            <Link href="/" className="text-xl font-bold tracking-tight text-blue-600 dark:text-blue-400">
+          <div className="container mx-auto px-4 h-16 grid grid-cols-3 items-center">
+            <Link href="/" className="text-xl font-bold tracking-tight text-rose-500 dark:text-rose-400">
               516경은
             </Link>
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <nav className="hidden md:flex items-center justify-center gap-8 text-base font-semibold">
               {/* 여기에 네비게이션 링크를 추가하세요 */}
-              <Link href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="#" className="hover:text-rose-500 dark:hover:text-rose-400 transition-colors">
                 학교생활
               </Link>
-              <Link href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <Link href="#" className="hover:text-rose-500 dark:hover:text-rose-400 transition-colors">
                 수학수업
               </Link>
             </nav>
-            <div className="flex md:hidden">
+            <div className="flex md:hidden justify-end">
               {/* 모바일 메뉴 버튼 자리 */}
               <button className="p-2 -mr-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -41,6 +41,8 @@ export default function RootLayout({
                 </svg>
               </button>
             </div>
+            {/* 데스크톱에서 오른쪽 열 빈 공간 */}
+            <div className="hidden md:block" />
           </div>
         </header>
 
