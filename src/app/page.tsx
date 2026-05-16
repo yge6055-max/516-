@@ -17,7 +17,7 @@ export default async function Home() {
         
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
-            경은이 교육실
+            경은쌤의 연구실
           </span>
           에<br className="hidden sm:block" /> 오신 것을 환영합니다
         </h1>
