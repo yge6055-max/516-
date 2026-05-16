@@ -1,6 +1,11 @@
 import Link from "next/link";
+import GuestbookForm from "@/components/GuestbookForm";
+import GuestbookList from "@/components/GuestbookList";
+import { getGuestbookEntries } from "@/app/actions";
 
-export default function Home() {
+export default async function Home() {
+  const entries = await getGuestbookEntries();
+
   return (
     <div className="flex-1 flex flex-col items-center justify-center w-full px-4 py-16 md:py-32 bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
       
@@ -42,13 +47,13 @@ export default function Home() {
 
       {/* 
         =========================================
-        여기에 새로운 컴포넌트를 추가하세요
-        예: 추천 강의 목록, 수강 후기, 강사진 소개 등
+        방명록 섹션
         =========================================
       */}
-      <div className="w-full max-w-5xl mx-auto mt-24">
-        {/* 새로운 섹션이 들어갈 빈 공간 예시 */}
-        {/* <FeatureSection /> */}
+      <div className="w-full max-w-2xl mx-auto mt-24">
+        <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white mb-6 text-center">응원의 한마디</h2>
+        <GuestbookForm />
+        <GuestbookList entries={entries} />
       </div>
 
     </div>
