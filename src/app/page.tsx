@@ -23,8 +23,7 @@ export default async function Home() {
         </h1>
         
         <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl leading-relaxed">
-          학생들의 잠재력을 깨우고 성장을 돕는 맞춤형 교육 서비스입니다.
-          지금 바로 다양한 학습 도구와 자료를 경험해보세요.
+          여기는 학생들의 즐거운 수학수업을 위해 열심히 연구하는 공간입니다
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
