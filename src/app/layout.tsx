@@ -27,13 +27,10 @@ export default function RootLayout({
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
               {/* 여기에 네비게이션 링크를 추가하세요 */}
               <Link href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                소개
+                학교생활
               </Link>
               <Link href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                강의
-              </Link>
-              <Link href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                커뮤니티
+                수학수업
               </Link>
             </nav>
             <div className="flex md:hidden">
